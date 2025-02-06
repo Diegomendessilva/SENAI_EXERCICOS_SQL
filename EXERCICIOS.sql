@@ -159,20 +159,13 @@ WHERE EmployeeCount >= 51
 --DimProduct e retornar os ID’s, Nomes e Preços de todos os produtos
 --LCD existentes.
 
-select ClassID,
-	StyleID, 
-	WeightUnitMeasureID,
-	StockTypeID, 
-	ColorID,
-	UnitOfMeasureID,
-	ETLLoadID,
+select ProductKey,
 	ProductName,
-	UnitPrice
-
-
-	
+	UnitPrice	
 from DimProduct
 where ProductDescription like '%LCD%'
+--
+select * from DimProduct
 
 
 select * from DimProduct
